@@ -15,14 +15,38 @@ const Navbar = () => {
       }}
       px="20px"
     >
-      <Link to="/">
-        <img
-          src={Logo}
-          alt="logo"
-          style={{ width: "48px", height: "48px", margin: "0 20px" }}
-        />
-      </Link>
-      <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
+      {/* <Stack direction="row" fontSize="24px" justifyContent="space-around">
+        <Link to="/">
+          <img
+            src={Logo}
+            alt="logo"
+            style={{ width: "20px", height: "20px" }}
+          />{" "}
+          <h4
+            style={{
+              textDecoration: "none",
+              color: "#3A1212",
+            }}
+          >
+            {" "}
+            Shape IT
+          </h4>
+        </Link>
+      </Stack> */}
+      <Stack direction="row" gap="5px">
+        <img src={Logo} alt="logo" style={{ width: "25px", height: "25px" }} />
+        <h4
+          style={{
+            textDecoration: "none",
+            color: "#3A1212",
+            fontSize: "24px",
+            borderBottom: "3px solid #000",
+          }}
+        >
+          Shape IT
+        </h4>
+      </Stack>
+      <Stack direction="row" gap="30px" fontSize="24px" alignItems="flex-end">
         <Link
           to="/"
           style={{
